@@ -2,6 +2,7 @@
 
 import './App.css'
 import HeaderSection from '@/components/sections/HeaderSection'
+import YourDaySection from '@/components/sections/YourDaySection'
 
 function App() {
 
@@ -9,6 +10,7 @@ function App() {
     // <div>halo</div>
     <div className='font-outfit'>
     <HeaderSection/>
+    <YourDaySection/>
     </div>
   )
 }

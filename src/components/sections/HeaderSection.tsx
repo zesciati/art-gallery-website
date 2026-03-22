@@ -12,8 +12,8 @@ export default function HeaderSection() {
           a spark of inspiration. Will these pieces inspire you? Visit us and
           find out.
         </div>
-        <button className="flex items-center mt-9 transition-colors ease-in-out duration-700 animate-bounce group">
-          <span className="uppercase text-xl font-big-shoulder bg-Eerie-Black hover:bg-Sandy-Brown text-white px-7 py-3.5 tracking-wider font-semibold">Our Location</span>
+        <button className="flex items-center mt-9 transition-colors ease-in-out duration-700 animate-bounce group hover:bg-Sandy-Brown bg-Eerie-Black  text-white">
+          <span className="uppercase text-xl font-big-shoulder  px-7 py-3.5 tracking-wider font-semibold">Our Location</span>
           <img src={iconArrowRight} alt="Right arrow svg"  className="bg-Sandy-Brown px-6 py-4 group-hover:bg-Eerie-Black"/>
         </button>
       </div>
