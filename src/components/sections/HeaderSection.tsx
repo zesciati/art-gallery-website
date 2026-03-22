@@ -3,7 +3,7 @@ import iconArrowRight from '@/assets/icon-arrow-right.svg'
 export default function HeaderSection() {
   return (
     <div>
-      <div className="bg-[url('@/assets/mobile/image-hero@2x.jpg')] w-full min-h-72 bg-no-repeat bg-cover bg-center"></div>
+      <div className="bg-[url('@/assets/mobile/image-hero@2x.jpg')] w-full min-h-72 bg-no-repeat bg-cover bg-center" ></div>
 
       <div className="mx-4 space-y-5 mt-8">
         <div className="font-big-shoulder text-6xl/13 font-bold mr-21  ">MODERN ART GALLERY</div>
