@@ -1,0 +1,8 @@
+@import "tailwindcss";
+
+@theme{
+
+  --color-Sandy-Brown: hsl(24, 55.6%, 62.9%);
+  --color-Eerie-Black: hsl(0, 0%, 8.2%);
+
+}
