@@ -1,12 +1,15 @@
 // import { useState } from 'react'
 
 import './App.css'
+import HeaderSection from '@/components/sections/HeaderSection'
 
 function App() {
-  // const [count, setCount] = useState(0)
 
   return (
-    <div>halo</div>
+    // <div>halo</div>
+    <div className='font-outfit'>
+    <HeaderSection/>
+    </div>
   )
 }
 
