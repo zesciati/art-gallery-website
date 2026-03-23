@@ -8,7 +8,7 @@ function App() {
 
   return (
     // <div>halo</div>
-    <div className='font-outfit'>
+    <div className='font-outfit space-y-28'>
     <HeaderSection/>
     <YourDaySection/>
     </div>
