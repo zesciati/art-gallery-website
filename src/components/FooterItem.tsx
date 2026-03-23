@@ -3,8 +3,8 @@
 
 export default function FooterItem() {
   return (
-    <div className="bg-Eerie-Black text-white p-6 space-y-7 md:flex md:justify-evenly  md:pt-15  md:gap-8  lg:gap-42 lg:px-36 ">
-      <div className="font-big-shoulder text-4xl uppercase font-extrabold mr-42 md:mr-0 md:text-3xl md:w-114 lg:text-4xl lg:w-49">
+    <div className="bg-Eerie-Black text-white px-6 py-9 space-y-8 md:flex md:justify-evenly  md:pt-15  md:gap-8  lg:gap-42 lg:px-36 ">
+      <div className="font-big-shoulder text-4xl w-42 uppercase font-extrabold md:text-3xl md:w-114 lg:text-4xl lg:w-49">
         Modern Art Gallery
       </div>
       <div className="font-extralight text-xl pr-4 md:pr-0  lg:w-120 ">
