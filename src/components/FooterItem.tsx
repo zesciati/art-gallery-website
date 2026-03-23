@@ -3,15 +3,15 @@
 
 export default function FooterItem() {
   return (
-    <div className="bg-Eerie-Black text-white p-6 space-y-7 md:flex md:justify-evenly  md:pt-15  md:gap-8 ">
-      <div className="font-big-shoulder text-4xl uppercase font-extrabold mr-42 md:mr-0 md:text-3xl md:w-114">
+    <div className="bg-Eerie-Black text-white p-6 space-y-7 md:flex md:justify-evenly  md:pt-15  md:gap-8  lg:gap-42 lg:px-36 ">
+      <div className="font-big-shoulder text-4xl uppercase font-extrabold mr-42 md:mr-0 md:text-3xl md:w-114 lg:text-4xl lg:w-49">
         Modern Art Gallery
       </div>
-      <div className="font-extralight text-xl pr-4 md:pr-0 md:text-xl  ">
+      <div className="font-extralight text-xl pr-4 md:pr-0  lg:w-120 ">
         The Modern Art Gallery is free to all visitors and open seven days a
         week from 8am to 9pm. Find us at 99 King Street, Newport, USA.
       </div>
-      <div className="space-y-2 md:w-150">
+      <div className="space-y-2 md:w-150 lg:w-70">
         <div className="flex gap-4">
           <a href="">
             <svg
@@ -59,7 +59,7 @@ export default function FooterItem() {
             </svg>
           </a>
         </div>
-        <span className="font-extralight "> &copy; 2024 Zaky Abiyyu Andri</span>
+        <span className="font-extralight text-lg "> &copy; 2024 Zaky Abiyyu Andri</span>
       </div>
     </div>
   );
