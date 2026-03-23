@@ -25,7 +25,7 @@ export default function YourDaySection() {
           <img src={imageGrid1} alt="art display" />
         </picture>
       </div>
-      <div className="grid max-sm:gap-3 sm:gap-3   sm:grid-cols-4 sm:grid-rows-4 ">
+      <div className="grid max-sm:gap-3 sm:gap-3 sm:grid-cols-4 sm:grid-rows-4 ">
         <div className="sm:row-start-1 sm:row-end-5 sm:col-start-1 sm:col-end-3 bg-amber-600  ">
           <img src={imageGrid2} alt="table with picture" className="sm:min-h-full" />
         </div>
