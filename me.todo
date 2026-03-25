@@ -16,7 +16,19 @@ mobile-design:
 responsive design:
   ✔ footer @done(26-03-24 17:22)
   ✔ header tablet @done(26-03-24 19:34)
-  ☐ header desktop
+  ✔ header desktop @done(26-03-25 01:14)
+    
+
+
+**Layout**
+- Replaced the fragile `grid-cols-[24rem_6.4rem_13rem]` with proportional `[1fr_auto]` / `[2fr_3fr_2fr]` columns that scale better across screen sizes
+
+**Accessibility**
+- Added `role="img"` and `aria-label` on the background image divs
+- Added `focus-visible` ring on the button for keyboard navigation
+- Added `aria-hidden="true"` on the decorative arrow span
+
+- Used semantic `<section>` as the wrapper and proper `<h1>` tags
 
 advance stuff:
 ☐ make icon updater
