@@ -1,9 +1,16 @@
 // import LinkedInIcon from "@/components/icons/LinkedInIcon.vue"
 // import FrontendMentorIcon from "../components/icons/FrontendMentorIcon.tsx";
+import { twMerge } from "tailwind-merge";
 
-export default function FooterItem() {
+  interface FooterItemProps{
+    className?: string;
+  }
+
+export default function FooterItem({ className = ''}: FooterItemProps) {
+
+
   return (
-    <div className="bg-Eerie-Black text-white px-6 py-9 space-y-8 md:flex md:justify-evenly  md:pt-15  md:gap-8  lg:gap-42 lg:px-36 ">
+    <footer className={twMerge(` bg-Eerie-Black text-white  px-6 py-9 space-y-8 md:flex md:justify-evenly  md:pt-15  md:gap-8  lg:gap-42 lg:px-36`, className )}>
       <div className="font-big-shoulder text-4xl w-42 uppercase font-extrabold md:text-3xl md:w-114 lg:text-4xl lg:w-49 xl:w-65 ">
         Modern Art Gallery
       </div>
@@ -61,6 +68,6 @@ export default function FooterItem() {
         </div>
         <span className="font-extralight text-lg "> &copy; 2024 Zaky Abiyyu Andri</span>
       </div>
-    </div>
+    </footer>
   );
 }

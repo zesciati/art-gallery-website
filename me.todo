@@ -32,6 +32,6 @@ responsive design:
 
 advance stuff:
 ✔ button our location routing path @done(26-03-25 22:56)
+✔ diff color footer between App.tsx and OurLocation using tailwind merge @done(26-03-26 16:01)
 ☐ make icon updater
-☐ footer between App.tsx and OurLocation
 
