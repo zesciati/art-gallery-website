@@ -1,8 +1,19 @@
 import iconArrowRight from "@/assets/icon-arrow-right.svg";
+import { useNavigate } from "react-router-dom";
+
+
 
 export default function HeaderSection() {
+
+  const navigate = useNavigate();
+
+  const ourlocation = () =>{
+    navigate("/ourlocation")
+  }
+
+
   return (
-    <section className="md:grid md:grid-cols-[2fr_1fr_2fr] md:grid-rows-[8rem_17rem_17rem] lg:grid-cols-3 lg:grid-rows-[10.7rem_17rem_17rem] ">
+    <section className="md:grid md:grid-cols-[2fr_1fr_2fr] md:grid-rows-[8rem_17rem_17rem] lg:grid-cols-3 lg:grid-rows-[10.7rem_17rem_17rem] xl:grid-rows-[2fr_3fr_3.8fr]">
       <div className="lg:col-start-1  lg:col-span-2 lg:row-start-1 lg:row-span-3 lg:bg-Eerie-Black max-lg:hidden">
         <div className="text-white mix-blend-difference lg:ml-25 lg:text-8xl/23 font-big-shoulder font-bold uppercase lg:mt-40 lg:w-103 ">Modern Art Gallery</div>
       </div>
@@ -19,7 +30,8 @@ export default function HeaderSection() {
           a spark of inspiration. Will these pieces inspire you? Visit us and
           find out.
         </div>
-        <button className="flex items-center mt-9 transition-colors ease-in-out duration-700 animate-bounce group hover:bg-Sandy-Brown bg-Eerie-Black  text-white">
+        <button className="flex items-center mt-9 transition-colors ease-in-out duration-700 animate-bounce group hover:bg-Sandy-Brown bg-Eerie-Black  text-white"
+        onClick={ourlocation}>
           <span className="uppercase text-xl font-big-shoulder  px-7 py-3.5 tracking-wider font-semibold   md:tracking-widest md:px-8 md:py-5">
             Our Location
           </span>
