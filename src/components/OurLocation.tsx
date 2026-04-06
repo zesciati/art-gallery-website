@@ -10,7 +10,7 @@ export default function OurLocation() {
   };
   return (
     <section className="">
-      <div className="bg-[url('@/assets/mobile/image-map.png')] w-full min-h-135 grid grid-cols-2 grid-rows-3 bg-no-repeat bg-cover bg-center md:grid-cols-[1fr_2fr_2fr] md:min-h-150 xl:min-h-250">
+      <div className="bg-[url('@/assets/mobile/image-map.png')] w-full min-h-135 grid grid-cols-2 grid-rows-3 bg-no-repeat bg-cover bg-center md:grid-cols-[1fr_2fr_2fr] md:min-h-135 lg:min-h-140 xl:min-h-170">
         <button
           className="flex items-center transition-colors ease-in-out duration-700 animate-bounce group hover:bg-Sandy-Brown bg-Eerie-Black  text-white col-start-2 mt-12 max-h-14 mr-2 w-46 md:col-start-2 md:max-h-16 md:w-50 "
           onClick={homePage}
