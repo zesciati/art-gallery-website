@@ -12,19 +12,31 @@ mobile-design:
 ✔ desc footer @done(26-03-23 18:04)
 ✔ add icon design @done(26-03-23 22:25)
 ✔ copyright  dengan tahun nama @done(26-03-23 22:26)
-✔ gambar map @done(26-03-28 11:29)
 
 responsive design:
   ✔ footer @done(26-03-24 17:22)
   ✔ header tablet @done(26-03-24 19:34)
   ✔ header desktop @done(26-03-25 01:14)
+<<<<<<< HEAD
   ✔ grid our location @done(26-03-28 22:56)
   ✔ mobile ourlocation @done(26-03-28 22:57)
   ✔ tablet ourlocation @done(26-03-28 23:41)
   ✔ desktop ourlocation @done(26-03-28 23:41)
   ✔ perbaikin ukuran map location 1440 @done(26-04-06 11:20)
+=======
+    
+>>>>>>> parent of 8d0a835 (feat: ourlocation desktop & tablet)
 
 
+**Layout**
+- Replaced the fragile `grid-cols-[24rem_6.4rem_13rem]` with proportional `[1fr_auto]` / `[2fr_3fr_2fr]` columns that scale better across screen sizes
+
+**Accessibility**
+- Added `role="img"` and `aria-label` on the background image divs
+- Added `focus-visible` ring on the button for keyboard navigation
+- Added `aria-hidden="true"` on the decorative arrow span
+
+- Used semantic `<section>` as the wrapper and proper `<h1>` tags
 
 advance stuff:
 ✔ button our location routing path @done(26-03-25 22:56)
