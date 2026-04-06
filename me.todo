@@ -22,10 +22,13 @@ responsive design:
   ✔ mobile ourlocation @done(26-03-28 22:57)
   ✔ tablet ourlocation @done(26-03-28 23:41)
   ✔ desktop ourlocation @done(26-03-28 23:41)
+<<<<<<< HEAD
   ✔ perbaikin ukuran map location 1440 @done(26-04-06 11:20)
 =======
     
 >>>>>>> parent of 8d0a835 (feat: ourlocation desktop & tablet)
+=======
+>>>>>>> parent of 20ed86b (feat: adding button spa to tohome in ourlocation.tsx)
 
 
 **Layout**
@@ -41,6 +44,5 @@ responsive design:
 advance stuff:
 ✔ button our location routing path @done(26-03-25 22:56)
 ✔ diff color footer between App.tsx and OurLocation using tailwind merge @done(26-03-26 16:01)
-✔ button to home routing path di OurLocation.tsx @done(26-04-06 11:31)
 ☐ make icon updater
 

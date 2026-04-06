@@ -7,7 +7,7 @@ export default function HeaderSection() {
 
   const navigate = useNavigate();
 
-  const ourLocation = () =>{
+  const ourlocation = () =>{
     navigate("/ourlocation")
   }
 
@@ -21,17 +21,17 @@ export default function HeaderSection() {
       <div className="bg-[url('@/assets/mobile/image-hero@2x.jpg')] w-full min-h-72 bg-no-repeat bg-cover bg-center md:col-start-1 md:col-span-2 md:row-start-1 md:row-span-3 md:bg-[url('@/assets/desktop/image-hero@2x.webp')] lg:col-start-2 lg:col-end-3 ">
       </div>
 
-      <div className="mx-4 space-y-5 mt-8 md:col-start-2 md:col-span-2 md:row-start-2 md:ml-12 md:mt-0 md:mx-0 md:pr-18 md:space-y-8 lg:w-100 lg:ml-85  xl:w-130 xl:pl-11 ">
-        <div className="font-big-shoulder text-6xl/13 font-bold mr-21 md:text-7xl md:mr-0 md:hidden md:w-78 max-sm:w-66 ">
+      <div className="mx-4 space-y-5 mt-8 md:col-start-2 md:col-span-2 md:row-start-2 md:ml-12  md:mt-0 md:mx-0 md:pr-18 md:space-y-8 lg:w-100 lg:ml-85">
+        <div className="font-big-shoulder text-6xl/13 font-bold mr-21 md:text-7xl md:mr-0 xl:hidden md:w-78 max-sm:w-66">
           MODERN ART GALLERY
         </div>
-        <div className="text-xl font-extralight lg:mb-20 xl:text-2xl lg:ml-4 max-xl:ml-2">
+        <div className="text-xl font-extralight lg:mb-20">
           The arts in the collection of the Modern Art Gallery all started from
           a spark of inspiration. Will these pieces inspire you? Visit us and
           find out.
         </div>
-        <button className="flex items-center mt-9 transition-colors ease-in-out duration-700 animate-bounce group hover:bg-Sandy-Brown bg-Eerie-Black  text-white "
-        onClick={ourLocation}>
+        <button className="flex items-center mt-9 transition-colors ease-in-out duration-700 animate-bounce group hover:bg-Sandy-Brown bg-Eerie-Black  text-white"
+        onClick={ourlocation}>
           <span className="uppercase text-xl font-big-shoulder  px-7 py-3.5 tracking-wider font-semibold   md:tracking-widest md:px-8 md:py-5">
             Our Location
           </span>

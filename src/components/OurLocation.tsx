@@ -1,20 +1,13 @@
 import FooterItem from "./FooterItem";
 import iconArrowLeft from "@/assets/icon-arrow-left.svg";
-import { useNavigate } from "react-router-dom";
 
 export default function OurLocation() {
-  const navigate = useNavigate();
-
-  const homePage = () => {
-    navigate("/");
-  };
-
   return (
     <section className="">
-      <div className="bg-[url('@/assets/mobile/image-map.png')] w-full min-h-135 grid grid-cols-2 grid-rows-3 bg-no-repeat bg-cover bg-center md:grid-cols-[1fr_2fr_2fr] md:min-h-150 xl:min-h-150">
+      <div className="bg-[url('@/assets/mobile/image-map.png')] w-full min-h-135 grid grid-cols-2 grid-rows-3 bg-no-repeat bg-cover bg-center md:grid-cols-[1fr_2fr_2fr] md:min-h-150 xl:min-h-250">
         <button
           className="flex items-center transition-colors ease-in-out duration-700 animate-bounce group hover:bg-Sandy-Brown bg-Eerie-Black  text-white col-start-2 mt-12 max-h-14 mr-2 w-46 md:col-start-2 md:max-h-16 md:w-50 "
-          onClick={homePage}
+          /* onClick={ourlocation} */
         >
           <img
             src={iconArrowLeft}
