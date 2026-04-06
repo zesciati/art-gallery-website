@@ -7,7 +7,7 @@ import imageGrid2 from "@/assets/desktop/image-grid-2.jpg";
 
 export default function YourDaySection() {
   return (
-    <section className="mx-4 max-sm:space-y-3 lg:mx-48 2xl:mx-96">
+    <section className="mx-4 max-sm:space-y-3 lg:mx-38 2xl:mx-46 ">
       <div className="flex flex-col-reverse gap-3  sm:flex-row sm:mb-4 lg:justify-between">
         <div className="space-y-9 sm:w-108 md:w-98">
           <h3 className="uppercase font-big-shoulder font-bold text-6xl/12.5 mr-6">
