@@ -15,7 +15,7 @@ export default function HeaderSection() {
   return (
     <section className="md:grid md:grid-cols-[2fr_1fr_2fr] md:grid-rows-[1fr_3fr_1.4fr] lg:grid-cols-3 lg:grid-rows-[10.7rem_17rem_17rem] xl:grid-rows-[2fr_3fr_3.8fr]">
       <div className="lg:col-start-1  lg:col-span-2 lg:row-start-1 lg:row-span-3 lg:bg-Eerie-Black max-lg:hidden">
-        <div className="text-white mix-blend-difference lg:ml-25 lg:text-8xl/23 font-big-shoulder font-bold uppercase lg:mt-40 lg:w-103 ">Modern Art Gallery</div>
+        <div className="text-white mix-blend-difference lg:ml-25 lg:text-8xl/23 font-big-shoulder font-bold uppercase lg:mt-40 lg:w-103 xl:ml-53">Modern Art Gallery</div>
       </div>
       
       <div className="bg-[url('@/assets/mobile/image-hero@2x.jpg')] w-full min-h-72 bg-no-repeat bg-cover bg-center md:col-start-1 md:col-span-2 md:row-start-1 md:row-span-3 md:bg-[url('@/assets/desktop/image-hero@2x.webp')] lg:col-start-2 lg:col-end-3 ">
