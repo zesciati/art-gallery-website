@@ -5,7 +5,7 @@ import { useNavigate } from "react-router-dom";
 export default function OurLocation() {
   const navigate = useNavigate();
 
-  const homePage = () => {
+  const goBackHome = () => {
     navigate("/");
   };
   return (
@@ -13,7 +13,7 @@ export default function OurLocation() {
       <div className="bg-[url('@/assets/mobile/image-map.png')] w-full min-h-135 grid grid-cols-2 grid-rows-3 bg-no-repeat bg-cover bg-center md:grid-cols-[1fr_2fr_2fr] md:min-h-160 lg:min-h-140 xl:min-h-170">
         <button
           className="flex items-center transition-colors ease-in-out duration-700 animate-bounce group hover:bg-Sandy-Brown bg-Eerie-Black  text-white col-start-2 mt-12 max-h-14 mr-2 w-46 md:col-start-2 md:max-h-16 md:w-50 "
-          onClick={homePage}
+          onClick={goBackHome}
         >
           <img
             src={iconArrowLeft}
@@ -27,7 +27,7 @@ export default function OurLocation() {
       </div>
 
       <div className="bg-Eerie-Black">
-        <div className="mx-8 py-18 space-y-8 md:grid md:grid-cols-[1fr_2fr] lg:grid-cols-2 lg:mx-40 xl:mx-60">
+        <div className="mx-8 py-18 space-y-8 sm:grid sm:grid-cols-[1fr_1fr] md:grid-cols-[1fr_2fr] lg:grid-cols-2 lg:mx-40 xl:mx-60">
           <h3 className="uppercase text-6xl font-bold text-white font-big-shoulder w-49 md:col-start-1">
             Our Location
           </h3>
