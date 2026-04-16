@@ -1,6 +1,7 @@
 import FooterItem from "./FooterItem";
 import iconArrowLeft from "@/assets/icon-arrow-left.svg";
 import { useNavigate } from "react-router-dom";
+import { useEffect } from "react";
 
 export default function OurLocation() {
   const navigate = useNavigate();
@@ -8,11 +9,32 @@ export default function OurLocation() {
   const goBackHome = () => {
     navigate("/");
   };
+
+  useEffect(() => {
+    const map = L.map("map").setView([41.48131, -71.31041], 16);
+
+    const marker = L.icon({
+      iconUrl: "/assets/icon-location.svg",
+      iconAnchor: [22, 94],
+      popupAnchor: [-3, -76]
+    });
+
+    L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png",{
+      attribution: '&copy; OpenStreetMap contributors', 
+    }).addTo(map);
+
+    L.marker([41.48131, -71.31041], { icon: marker}).addTo(map).openPopup();
+    
+    // cleanup — hapus map saat komponen unmount
+    return () => map.remove();
+  }, []); // [] = hanya jalan sekali saat mount 
+
   return (
     <section className="">
-      <div className="bg-[url('@/assets/mobile/image-map.png')] w-full min-h-135 grid grid-cols-2 grid-rows-3 bg-no-repeat bg-cover bg-center md:grid-cols-[1fr_2fr_2fr] md:min-h-160 lg:min-h-140 xl:min-h-170">
+      <div  className=" w-full min-h-135 grid grid-cols-2 grid-rows-3  md:grid-cols-[1fr_2fr_2fr] md:min-h-160 lg:min-h-140 xl:min-h-170 ">
+        <div id="map" className="col-start-1 col-span-3 row-start-1 row-span-3"></div>
         <button
-          className="flex items-center transition-colors ease-in-out duration-700 animate-bounce group hover:bg-Sandy-Brown bg-Eerie-Black  text-white col-start-2 mt-12 max-h-14 mr-2 w-46 md:col-start-2 md:max-h-16 md:w-50 "
+          className="flex items-center transition-colors ease-in-out duration-700 animate-bounce group hover:bg-Sandy-Brown bg-Eerie-Black  text-white col-start-1 mt-12 max-h-14 mr-2 w-46 md:col-start-2 md:max-h-16 md:w-50 "
           onClick={goBackHome}
         >
           <img
