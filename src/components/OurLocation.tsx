@@ -2,6 +2,8 @@ import FooterItem from "./FooterItem";
 import iconArrowLeft from "@/assets/icon-arrow-left.svg";
 import { useNavigate } from "react-router-dom";
 import { useEffect } from "react";
+import locationIcon from "@/assets/icon-location.svg";
+
 
 declare const L: any;
 
@@ -16,7 +18,7 @@ export default function OurLocation() {
     const map = L.map("map").setView([41.48131, -71.31041], 16);
 
     const marker = L.icon({
-      iconUrl: "src/assets/icon-location.svg",
+      iconUrl: locationIcon,
       iconAnchor: [22, 94],
       popupAnchor: [-3, -76]
     });
