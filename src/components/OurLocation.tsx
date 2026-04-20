@@ -3,6 +3,8 @@ import iconArrowLeft from "@/assets/icon-arrow-left.svg";
 import { useNavigate } from "react-router-dom";
 import { useEffect } from "react";
 
+declare const L: any;
+
 export default function OurLocation() {
   const navigate = useNavigate();
 
